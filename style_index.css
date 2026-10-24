@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #d39207 20%, #0231ce 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.order-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(32, 28, 28, 0.432);
+  max-width: 600px;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  font-size: 70px;
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  color: #273bae;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #6a75d6;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #0231ce;
+}
+
+.order-button {
+  background-color: #0231ce;
+  color: white;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.order-button:hover {
+  background-color: #c9770c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #0231ce;
+}
+
+@media (max-width: 480px) {
+  .order-container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    font-size: 55px;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .order-button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
