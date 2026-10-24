@@ -1,67 +1,35 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Акаунт</title>
-    <link rel="stylesheet" href="style_me.css">
-</head>
-<body>
+    <title>Створити акаунт Simbagram</title>
+    <link rel="stylesheet" href="style_create.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="order-container">
+        <h2 class="logo">🐈</h2>
+        <h1>Створити акаунт Simbagram</h1>
+        <form>
+          <div class="input-group">
+            <label>Ім'я користувача</label>
+            <input type="text" placeholder="..." required>
+          </div>
 
-    <div class="header">
-        <a href="home.html" class="button">←</a>
-        <div class="logo-container">
-            <div class="logo-title">Simtea</div>
-        </div>
-        <div style="width: 140px;" class="desktop-spacer"></div>
+          <div class="input-group">
+            <label>Пароль</label>
+            <input type="text" placeholder="..." maxlength="16" required>
+          </div>
+
+          <div class="input-group">
+            <label>Повторіть пароль</label>
+            <input type="text" placeholder="..." maxlength="16" required>
+          </div>
+
+          <a href="index.html" class="order-button">Створити</a>
+        </form>
+      </div>
     </div>
-
-    <div class="profile-container">
-        <div class="profile-sidebar">
-            <div class="avatar-container">🐱</div>
-            <div class="username">Ти</div>
-            <div class="status">Великий любитель котиків</div>
-            
-            <div class="stats-box">
-                <div class="stat-item">
-                    <span>Підписники :</span>
-                    <span class="stat-val">2</span>
-                </div>
-                <div class="stat-item">
-                    <span>Ви підписані :</span>
-                    <span class="stat-val">1</span>
-                </div>
-                <div class="stat-item">
-                    <span>Нових Сповіщень :</span>
-                    <span class="stat-val">0</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="profile-content">
-            <div class="content-top">
-                <div class="section-title">Підписники</div>
-                <div class="games-list">
-                    <div class="game-item">
-                        <div class="game-info">
-                            <div class="game-name">Мурка666</div>
-                            <div class="game-meta">Не в мережі</div>
-                        </div>
-                        <button class="play-btn">Переглянути акаунт</button>
-                    </div>
-                    <div class="game-item">
-                        <div class="game-info">
-                            <div class="game-name">Кицюня52</div>
-                            <div class="game-meta">гортає стрічку</div>
-                        </div>
-                        <button class="play-btn">Переглянути акаунт</button>
-                    </div>
-                </div>
-            </div>
-            
-            <a href="index.html" class="logout-btn">Вихід</a>
-        </div>
-    </div>
-
-</body>
+  </body>
 </html>
